@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('login.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+        .game-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .choices {
+            margin-bottom: 20px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result, .player-info {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .player-info {
+            display: none;
+        }
+        .player-info.active {
+            display: block;
+        }
+        #winner, #reset {
+            display: none;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .back-link {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #fff;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .back-link:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="choices">
+            <button onclick="playGame('rock')">Rock</button>
+            <button onclick="playGame('paper')">Paper</button>
+            <button onclick="playGame('scissors')">Scissors</button>
+        </div>
+        <div class="result">
+            <p id="user-choice">Your choice: -</p>
+            <p id="computer-choice">Computer's choice: -</p>
+            <p id="game-result">Result: -</p>
+        </div>
+        <div id="winner"></div>
+        <button id="reset" onclick="resetGame()">Reset Game</button>
+        <div class="back-link" onclick="window.location.href='game.html'">Go Back</div>
+    </div>
+    <script>
+        const player1 = 'Player 1';
+        let player2 = 'Computer';
+        let isTwoPlayerMode = false;
+
+        function playGame(userChoice) {
+            const choices = ['rock', 'paper', 'scissors'];
+            const computerChoice = choices[Math.floor(Math.random() * 3)];
+
+            document.getElementById('user-choice').textContent = Your choice: ${userChoice};
+            document.getElementById('computer-choice').textContent = Computer's choice: ${computerChoice};
+
+            let result = '';
+            if (userChoice === computerChoice) {
+                result = "It's a draw!";
+            } else if (
+                (userChoice === 'rock' && computerChoice === 'scissors') ||
+                (userChoice === 'paper' && computerChoice === 'rock') ||
+                (userChoice === 'scissors' && computerChoice === 'paper')
+            ) {
+                result = 'You win!';
+                showWinner(player1);
+            } else {
+                result = 'You lose!';
+                showWinner(player2);
+            }
+
+            document.getElementById('game-result').textContent = Result: ${result};
+        }
+
+        function showWinner(winner) {
+            document.getElementById('winner').innerText = ${winner} won!;
+            document.getElementById('winner').style.display = 'block';
+            document.getElementById('reset').style.display = 'block';
+        }
+
+        function resetGame() {
+            document.getElementById('user-choice').textContent = 'Your choice: -';
+            document.getElementById('computer-choice').textContent = "Computer's choice: -";
+            document.getElementById('game-result').textContent = 'Result: -';
+            document.getElementById('winner').style.display = 'none';
+            document.getElementById('reset').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

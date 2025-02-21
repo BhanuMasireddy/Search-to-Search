@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Services</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="darkmode.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        #tit {
+            color: rgba(253, 250, 251, 0.747);
+        }
+        #logo {
+            height: 50px;
+            width: 50px;
+        }
+        /* Header Styles */
+        .header {
+            background-color: indigo;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            color: grey;
+        }
+
+        .nav-links a {
+            color: rgb(4, 5, 5);
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1px solid rgb(12, 11, 11);
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            background-color: #005bb5;
+        }
+        @media (max-width: 768px) {
+            .header {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px var(--card-box);
+            transition: transform 0.2s;
+            color: var(--text-color);
+            background-color: var(--background-color);
+			
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .btn-primary {
+            background-color: #d3a4b1; /* Muted pink color */
+            color: black; /* Set button text color to black */
+            font-weight: bold; /* Make button text bold */
+            border: none;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #c090a1; 
+        }
+        @media (max-width: 767.98px) {
+            .card-deck {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img id="logo" src="sts.jpg" alt="logo" height="50px" width="50px">
+        <h3 id="tit">Search To Search</h3>
+        <nav class="nav-links">
+            <button type="button" class="btn btn-outline-light">Home</button>
+            <button type="button" class="btn btn-outline-light">About Us</button>
+            <button type="button" class="btn btn-outline-light">Contact Us</button>
+        </nav>
+        <div class="button-container">
+            <button class="theme-toggle" onclick="toggleTheme()">Dark Mode</button>
+        </div>
+    </header>
+    
+    <div class="container mt-4">
+        <div class="text-center mb-4">
+            <h1>Education</h1>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <img src="https://static.vecteezy.com/system/resources/previews/012/697/676/non_2x/grocery-store-logo-template-in-flat-design-style-vector.jpg" class="card-img-top" alt="Groceries">
+                <div class="card-body text-center">
+                    <h5 class="card-title"><b>Groceries</b></h5>
+                    <p class="card-text">Your one-stop shop for fresh produce, pantry staples, and daily essentials.</p>
+                    <a href="grocery.html" class="btn btn-primary"><b>Explore</b></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://thumbs.dreamstime.com/b/ready-to-eat-food-icon-ready-to-eat-healthy-food-icon-127810341.jpg" class="card-img-top" alt="readytoeat">
+                <div class="card-body text-center">
+                    <h5 class="card-title"><b>Ready To Eat</b></h5>
+                    <p class="card-text">Delicious and convenient ready-to-eat meals delivered fresh to your doorstep.</p>
+                    <a href="readytoeat.html" class="btn btn-primary"><b>Explore</b></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmrrs9NHhHrFFZNTQEoOr6QcvH0qjp2eewJ60wDVaq16o72GGkHDMjeTxv_2_1kZKSbbk&usqp=CAU" class="card-img-top" alt="FreshMeat">
+                <div class="card-body text-center">
+                    <h5 class="card-title"><b>Fresh Meat</b></h5>
+                    <p class="card-text">Get the freshest and highest quality meat delivered straight to your doorstep from top providers.</p>
+                    <a href="freshmeat.html" class="btn btn-primary"><b>Explore</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>About Us</h5>
+                    <p>We are a team of passionate individuals dedicated to providing 
+                        the best resources and services for you.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: searchtosearch@gmail.com</li>
+                        <li>Phone: +91 98456 07890</li>
+                        <li>Address: Anurag University,Venkatapur, India</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mt-3">
+                    <p class="mb-0">&copy; 2025 Search To Search. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="dark.js"></script>
+   </body>
+  </html>

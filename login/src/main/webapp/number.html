@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: url('home.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: inline-block;
+            border-radius: 10px;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+        }
+        #resultMessage {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .home-link {
+            margin-top: 20px;
+            display: block;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            background-color: grey;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .home-link:hover {
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Number Guessing Game</h1>
+    <div class="container">
+        <p>Guess a number between 1 and 100</p>
+        <input type="number" id="guessInput" min="1" max="100" placeholder="Enter your guess">
+        <button id="submitGuess">Submit Guess</button>
+        <button id="resetGame">Reset Game</button>
+        <p id="resultMessage"></p>
+        <a href="game.html" class="home-link">Go Back to Home</a>
+    </div>
+    <script>
+        let randomNumber = Math.floor(Math.random() * 100) + 1;
+        const guessInput = document.getElementById("guessInput");
+        const submitGuess = document.getElementById("submitGuess");
+        const resetGame = document.getElementById("resetGame");
+        const resultMessage = document.getElementById("resultMessage");
+
+        function checkGuess() {
+            let userGuess = parseInt(guessInput.value);
+            if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+                resultMessage.textContent = "Please enter a valid number between 1 and 100.";
+                return;
+            }
+            if (userGuess === randomNumber) {
+                resultMessage.textContent = "Congratulations! You guessed the right number!";
+            } else if (userGuess < randomNumber) {
+                resultMessage.textContent = "Too low! Try again.";
+            } else {
+                resultMessage.textContent = "Too high! Try again.";
+            }
+        }
+
+        function resetGameFunction() {
+            randomNumber = Math.floor(Math.random() * 100) + 1;
+            guessInput.value = "";
+            resultMessage.textContent = "";
+        }
+
+        submitGuess.addEventListener("click", checkGuess);
+        resetGame.addEventListener("click", resetGameFunction);
+    </script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link href="darkmode.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    	body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        #tit {
+            color: rgba(253, 250, 251, 0.747);
+        }
+		.card{
+			color: var(--text-color);
+            background-color: var(--background-color);
+            box-shadow: 0 4px 8px var(--card-box) ;
+		}
+        /* Header Styles */
+        .header {
+            background-color: indigo;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            color: grey;
+        }
+
+        .nav-links a {
+            color: rgb(4, 5, 5);
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1px solid rgb(12, 11, 11);
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            background-color: #005bb5;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+		<img id="logo" src="sts.jpg" alt="logo" height="50px" width="50px">
+        <h3 id="tit">Search To Search</h3>
+        <nav class="nav-links">
+            <button type="button" class="btn btn-outline-light">Home</button>
+            <button type="button" class="btn btn-outline-light">About Us</button>
+            <button type="button" class="btn btn-outline-light">Contact Us</button>
+        </nav>
+        <button class="theme-toggle" onclick="toggleTheme()">Dark Mode</button>
+    </header>
+	<h1><center>Travel</center></h1>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://s7ap1.scene7.com/is/image/incredibleindia/manikarnika-ghat-city-hero?qlt=82&ts=1727959374496" class="card-img-top" alt="Paris">
+                    <div class="card-body">
+                        <h5 class="card-title">Varanasi</h5>
+                        <p class="card-text">One of the oldest living cities, known for spirituality and Ganga Aarti.</p>
+                        <div class="btn-group">
+                            <a href="https://www.airindia.com/" class="btn btn-primary">Flight</a>
+                            <a href="https://www.irctc.co.in/nget/train-search" class="btn btn-success">Train</a>
+                            <a href="https://www.redbus.in/" class="btn btn-danger">Bus</a>
+                            <a href="https://www.google.com/maps/dir/Hyderabad,+Telangana/Varanasi,+Uttar+Pradesh/@21.2792709,75.2932825,6z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bcb99daeaebd2c7:0xae93b78392bafbc2!2m2!1d78.4772439!2d17.406498!1m5!1m1!1s0x398e2db76febcf4d:0x68131710853ff0b5!2m2!1d82.9739144!2d25.3176452!3e0?entry=ttu&g_ep=EgoyMDI1MDIxOC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="btn btn-warning">Bike</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://gulliveradventures.com/wp-content/uploads/2022/06/motorcycle-trip-to-ladakh.jpg" class="card-img-top" alt="New York">
+                    <div class="card-body">
+                        <h5 class="card-title">Leh-Ladakh</h5>
+                        <p class="card-text">A paradise for adventure seekers, famous for Pangong Lake and monasteries.</p>
+                        <div class="btn-group">
+                            <a href="https://www.airindia.com/" class="btn btn-primary">Flight</a>
+                            <a href="https://www.irctc.co.in/nget/train-search" class="btn btn-success">Train</a>
+                            <a href="https://www.redbus.in/" class="btn btn-danger">Bus</a>
+                            <a href="https://www.google.com/maps/dir/Hyderabad,+Telangana/Leh/@25.616165,67.1689778,5z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bcb99daeaebd2c7:0xae93b78392bafbc2!2m2!1d78.4772439!2d17.406498!1m5!1m1!1s0x38fdeb21445fed85:0xd1bb09975086f710!2m2!1d77.5770535!2d34.1525864!3e0?entry=ttu&g_ep=EgoyMDI1MDIxOC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="btn btn-warning">Bike</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://boutindia.s3.us-east-2.amazonaws.com/images/blog/images/2023-07-21-13-58-37-64ba41b586366-Agra-The-Glimpse-of-Mughal-Kingdom.jpg" class="card-img-top" alt="Rome">
+                    <div class="card-body">
+                        <h5 class="card-title">Agra</h5>
+                        <p class="card-text"> Home to the iconic Taj Mahal, a UNESCO World Heritage Site.</p>
+                        <div class="btn-group">
+                            <a href="https://www.airindia.com/" class="btn btn-primary">Flight</a>
+                            <a href="https://www.irctc.co.in/nget/train-search" class="btn btn-success">Train</a>
+                            <a href="https://www.redbus.in/" class="btn btn-danger">Bus</a>
+                            <a href="https://www.google.com/maps/dir/Hyderabad,+Telangana/Agra,+Uttar+Pradesh/@22.2057005,73.9299918,6z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bcb99daeaebd2c7:0xae93b78392bafbc2!2m2!1d78.4772439!2d17.406498!1m5!1m1!1s0x39740d857c2f41d9:0x784aef38a9523b42!2m2!1d78.0080745!2d27.1766701!3e0?entry=ttu&g_ep=EgoyMDI1MDIxOC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="btn btn-warning">Bike</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://www.worldtribune.org/wp-content/uploads/sites/2/2024/01/GettyImages-1191232894.jpg" class="card-img-top" alt="London">
+                    <div class="card-body">
+                        <h5 class="card-title">Jaipur</h5>
+                        <p class="card-text">The Pink City, famous for Amer Fort, Hawa Mahal, and vibrant culture</p>
+                        <div class="btn-group">
+                            <a href="https://www.airindia.com/" class="btn btn-primary">Flight</a>
+                            <a href="https://www.irctc.co.in/nget/train-search" class="btn btn-success">Train</a>
+                            <a href="https://www.redbus.in/" class="btn btn-danger">Bus</a>
+                            <a href="https://www.google.com/maps/dir/Hyderabad,+Telangana/Jaipur,+Rajasthan/@22.0680795,71.5291387,6z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bcb99daeaebd2c7:0xae93b78392bafbc2!2m2!1d78.4772439!2d17.406498!1m5!1m1!1s0x396c4adf4c57e281:0xce1c63a0cf22e09!2m2!1d75.7872709!2d26.9124336!3e0?entry=ttu&g_ep=EgoyMDI1MDIxOC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D
+" class="btn btn-warning">Bike</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://www.agoda.com/wp-content/uploads/2024/07/Featured-image-Palolem-beach-Goa-India-1244x700.jpg" class="card-img-top" alt="London">
+                    <div class="card-body">
+                        <h5 class="card-title">Goa</h5>
+                        <p class="card-text">Known for its beaches, nightlife, and Portuguese heritage</p>
+                        <div class="btn-group">
+                            <a href="https://www.airindia.com/" class="btn btn-primary">Flight</a>
+                            <a href="https://www.irctc.co.in/nget/train-search" class="btn btn-success">Train</a>
+                            <a href="https://www.redbus.in/" class="btn btn-danger">Bus</a>
+                            <a href="https://www.google.com/maps/dir/Hyderabad,+Telangana/Goa/@16.5779084,74.9774301,8z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bcb99daeaebd2c7:0xae93b78392bafbc2!2m2!1d78.4772439!2d17.406498!1m5!1m1!1s0x3bbfba106336b741:0xeaf887ff62f34092!2m2!1d74.123996!2d15.2993265!3e0?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D
+" class="btn btn-warning">Bike</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2023/12/15/ed4e5844df8201e480059b18e40f5947_1000x1000.jpg" class="card-img-top" alt="London">
+                    <div class="card-body">
+                        <h5 class="card-title">Kerala </h5>
+                        <p class="card-text">Famous for backwaters, tea gardens, and houseboats.</p>
+                        <div class="btn-group">
+                            <a href="https://www.airindia.com/" class="btn btn-primary">Flight</a>
+                            <a href="https://www.irctc.co.in/nget/train-search" class="btn btn-success">Train</a>
+                            <a href="https://www.redbus.in/" class="btn btn-danger">Bus</a>
+                            <a href="https://www.google.com/maps/dir/Hyderabad,+Telangana/Kerala/@13.7223318,75.2023891,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bcb99daeaebd2c7:0xae93b78392bafbc2!2m2!1d78.4772439!2d17.406498!1m5!1m1!1s0x3b0812ffd49cf55b:0x64bd90fbed387c99!2m2!1d76.6412712!2d10.1631526!3e0?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="btn btn-warning">Bike</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://www.andbeyond.com/wp-content/uploads/sites/5/Chhatrapati-Shivaji-Terminus-railway-station-mumbai.jpg" class="card-img-top" alt="London">
+                    <div class="card-body">
+                        <h5 class="card-title">Mumbai</h5>
+                        <p class="card-text">The City of Dreams, famous for Bollywood, Gateway of India, and Marine Drive.</p>
+                        <div class="btn-group">
+                            <a href="https://www.airindia.com/" class="btn btn-primary">Flight</a>
+                            <a href="https://www.irctc.co.in/nget/train-search" class="btn btn-success">Train</a>
+                            <a href="https://www.redbus.in/" class="btn btn-danger">Bus</a>
+                            <a href="https://www.google.com/maps/dir/Hyderabad,+Telangana/Mumbai,+Maharashtra/@18.6460795,73.0353044,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bcb99daeaebd2c7:0xae93b78392bafbc2!2m2!1d78.4772439!2d17.406498!1m5!1m1!1s0x3be7c6306644edc1:0x5da4ed8f8d648c69!2m2!1d72.8776559!2d19.0759837!3e0?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="btn btn-warning">Bike</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://s7ap1.scene7.com/is/image/incredibleindia/red-fort-delhi1-attr-hero?qlt=82&ts=1727352314555" class="card-img-top" alt="London">
+                    <div class="card-body">
+                        <h5 class="card-title">Delhi </h5>
+                        <p class="card-text">The capital city, home to India Gate, Red Fort, Qutub Minar</p>
+                        <div class="btn-group">
+                            <a href="https://www.airindia.com/" class="btn btn-primary">Flight</a>
+                            <a href="https://www.irctc.co.in/nget/train-search" class="btn btn-success">Train</a>
+                            <a href="https://www.redbus.in/" class="btn btn-danger">Bus</a>
+                            <a href="https://www.google.com/maps/dir/Hyderabad,+Telangana/New+Delhi,+Delhi/@22.923582,73.7345329,6z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bcb99daeaebd2c7:0xae93b78392bafbc2!2m2!1d78.4772439!2d17.406498!1m5!1m1!1s0x390cfd5b347eb62d:0x52c2b7494e204dce!2m2!1d77.2088282!2d28.6139298!3e0?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D
+" class="btn btn-warning">Bike</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://www.sushanttravels.com/uploads/rishi_kesh_2.jpg" class="card-img-top" alt="London">
+                    <div class="card-body">
+                        <h5 class="card-title">Rishikesh & Haridwar </h5>
+                        <p class="card-text">Best for yoga, adventure sports, and spiritual experiences</p>
+                        <div class="btn-group">
+                            <a href="https://www.airindia.com/" class="btn btn-primary">Flight</a>
+                            <a href="https://www.irctc.co.in/nget/train-search" class="btn btn-success">Train</a>
+                            <a href="https://www.redbus.in/" class="btn btn-danger">Bus</a>
+                            <a href="https://www.google.com/maps/dir/Hyderabad,+Telangana/Rishikesh,+Uttarakhand/@23.6709107,73.7740397,6z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bcb99daeaebd2c7:0xae93b78392bafbc2!2m2!1d78.4772439!2d17.406498!1m5!1m1!1s0x39093e67cf93f111:0xcc78804a6f941bfe!2m2!1d78.2853017!2d30.1157619!3e0?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D
+" class="btn btn-warning">Bike</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://www.jcrcab.com/wp-content/uploads/2020/08/1540816023_shutterstock_415397137.jpg.jpg" class="card-img-top" alt="London">
+                    <div class="card-body">
+                        <h5 class="card-title">Udaipur</h5>
+                        <p class="card-text">The City of Lakes, known for Lake Palace and City Palace.</p>
+                        <div class="btn-group">
+                            <a href="https://www.airindia.com/" class="btn btn-primary">Flight</a>
+                            <a href="https://www.irctc.co.in/nget/train-search" class="btn btn-success">Train</a>
+                            <a href="https://www.redbus.in/" class="btn btn-danger">Bus</a>
+                            <a href="https://www.google.com/maps/dir/Hyderabad,+Telangana/Udaipur,+Rajasthan/@20.9281925,70.797408,6z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bcb99daeaebd2c7:0xae93b78392bafbc2!2m2!1d78.4772439!2d17.406498!1m5!1m1!1s0x3967e56550a14411:0xdbd8c28455b868b0!2m2!1d73.712479!2d24.585445!3e0?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="btn btn-warning">Bike</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://taxibazaar.in/assets/images/blog/mysore.jpg" class="card-img-top" alt="London">
+                    <div class="card-body">
+                        <h5 class="card-title">Mysore</h5>
+                        <p class="card-text">Known for the grand Mysore Palace and vibrant Dussehra celebrations.</p>
+                        <div class="btn-group">
+                            <a href="https://www.airindia.com/" class="btn btn-primary">Flight</a>
+                            <a href="https://www.irctc.co.in/nget/train-search" class="btn btn-success">Train</a>
+                            <a href="https://www.redbus.in/" class="btn btn-danger">Bus</a>
+                            <a href="https://www.google.com/maps/dir/Hyderabad,+Telangana/Mysuru,+Karnataka/@14.8360228,74.7470441,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bcb99daeaebd2c7:0xae93b78392bafbc2!2m2!1d78.4772439!2d17.406498!1m5!1m1!1s0x3baf70381d572ef9:0x2b89ece8c0f8396d!2m2!1d76.6393805!2d12.2958104!3e0?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D
+" class="btn btn-warning">Bike</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://stateexpressindia.com/wp-content/uploads/2023/09/andaman_nicobar.webp" class="card-img-top" alt="Sydney">
+                    <div class="card-body">
+                        <h5 class="card-title">Andaman & Nicobar Islands</h5>
+                        <p class="card-text">A tropical paradise with pristine beaches, coral reefs, and scuba diving.</p>
+                        <div class="btn-group">
+                            <a href="https://www.airindia.com/" class="btn btn-primary">Flight</a>
+                            <a href="https://www.irctc.co.in/nget/train-search" class="btn btn-success">Train</a>
+                            <a href="https://www.redbus.in/" class="btn btn-danger">Bus</a>
+                            <a href="https://www.google.com/maps/dir/Hyderabad,+Telangana/Andaman+and+Nicobar+Islands/@14.0179223,80.1899902,6z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bcb99daeaebd2c7:0xae93b78392bafbc2!2m2!1d78.4772439!2d17.406498!1m5!1m1!1s0x3064a00f2b650ff3:0xce80055648fccb2c!2m2!1d92.4999918!2d10.7448873!3e0?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="btn btn-warning">Bike</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dark.js"></script>
+</body>
+</html>

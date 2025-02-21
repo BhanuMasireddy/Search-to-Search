@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Services</title>
+    <style>
+        body {
+            background-color: white;
+            background-image: url('https://source.unsplash.com/1600x900/?food,groceries');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            background-color: indigo;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            flex-grow: 1;
+        }
+        .card {
+            width: 250px;
+            background: white;
+            border-radius: 10px;
+            border: 2px solid #000000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 20px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            text-decoration: none;
+            color: black;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            background-color: #f9f9f9;
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+        }
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="main.html">Home</a>
+    </header>
+    <main>
+        <h1>Ready to Eat</h1>
+        <p>Find the best ready-to-eat food services available online. Click on any service below to visit their website and explore their offerings.</p>
+        <div class="card-container">
+            <a href="https://www.swiggy.com/" target="_blank" class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png" alt="Swiggy">
+                <h3>Swiggy</h3>
+                <p>Get your favorite meals delivered hot and fresh, anytime, anywhere!</p>
+            </a>
+            <a href="https://www.zomato.com/" target="_blank" class="card">
+                <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2017-05/18/full/1495113103-2587.jpg" alt="Zomato">
+                <h3>Zomato</h3>
+                <p>Discover and order from the best restaurants near you.</p>
+            </a>
+            <a href="https://www.eatsure.com/" target="_blank" class="card">
+                <img src="https://cdn6.aptoide.com/imgs/8/f/f/8ff0333aba22d46bdc6838b2b927e8b6_icon.png" alt="Eat Sure">
+                <h3>Eat Sure</h3>
+                <p>EatSure offers curated, hygienic, and delicious meals from top brands, delivered to your doorstep.</p>
+            </a>
+            <a href="https://pizzaonline.dominos.co.in/" target="_blank" class="card">
+                <img src="https://findlogovector.com/wp-content/uploads/2018/12/dominos-logo-vector.png" alt="Dominos">
+                <h3>Dominos</h3>
+                <p>Delicious pizzas delivered hot and fresh, right to your doorstep</p>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <h4>&copy; 2024 All Rights Reserved</h4>
+    </footer>
+</body>
+</html>

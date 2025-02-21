@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-image: url('#');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font enhancement */
+        }
+        .navbar {
+            background-color: rgba(255, 182, 193, 0.9);
+            font-family: 'Arial', sans-serif; /* Font enhancement */
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #333;
+            font-weight: bold; /* Font enhancement */
+        }
+        .navbar-brand:hover, .navbar-nav .nav-link:hover {
+            color: #007bff;
+        }
+        .card-deck .card {
+            margin-bottom: 20px;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-family: 'Helvetica', sans-serif; /* Font enhancement */
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .btn-primary {
+            background-color: #d3a4b1; /* Muted pink color */
+            color: black; /* Set button text color to black */
+            font-weight: bold; /* Make button text bold */
+            border: none;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #c090a1; 
+        }
+        @media (max-width: 767.98px) {
+            .card-deck {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        #tit {
+            color: rgba(253, 250, 251, 0.747);
+            font-family: 'Courier New', Courier, monospace; /* Font enhancement */
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: indigo;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            color: white;
+            font-family: 'Arial', sans-serif; /* Font enhancement */
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            color: grey;
+        }
+
+        .nav-links a {
+            color: rgb(4, 5, 5);
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1px solid rgb(12, 11, 11);
+            border-radius: 5px;
+            font-family: 'Verdana', sans-serif; /* Font enhancement */
+        }
+
+        .nav-links a:hover {
+            background-color: #005bb5;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container input[type="text"] {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #0a0909;
+            font-size: 1em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font enhancement */
+        }
+
+        .search-container button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            margin-left: 5px;
+            background-color: indigo;
+            color: rgb(233, 239, 238);
+            cursor: pointer;
+            font-family: 'Arial', sans-serif; /* Font enhancement */
+        }
+
+        .search-container button:hover {
+            background-color: #003f7f;
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+
+            .search-container {
+                margin-top: 10px;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .search-container input[type="text"] {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h3 id="tit">Search To Search</h3>
+        <nav class="nav-links">
+            <button type="button" class="btn btn-outline-light">Home</button>
+            <button type="button" class="btn btn-outline-light">About Us</button>
+            <button type="button" class="btn btn-outline-light">Services</button>
+            <button type="button" class="btn btn-outline-light">Contact Us</button>
+        </nav>
+        <div>
+            <input type="text" placeholder="Search...">
+            <button type="submit" class="btn btn-outline-light">Search</button>
+        </div>
+        <button type="button" class="btn btn-outline-light">Sign In</button>
+    </header>
+    
+    <div class="container mt-4">
+        <div class="text-center mb-4">
+            <h1>Education</h1>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <img src="https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500" class="card-img-top" alt="Learn with us -YT">
+                <div class="card-body text-center">
+                    <h5 class="card-title"><b>Learn with us -YT</b></h5>
+                    <p class="card-text">Explore educational content and expand your knowledge.</p>
+                    <a href="youtube.html" class="btn btn-primary"><b>Start learning</b></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.einfochips.com/wp-content/uploads/2018/08/a-complete-guide-to-chatbot-development-from-tools-to-best-practices-featured.jpg" class="card-img-top" alt="chatbots">
+                <div class="card-body text-center">
+                    <h5 class="card-title"><b>ChatBots</b></h5>
+                    <p class="card-text">Interact with AI chatbots and improve productivity.</p>
+                    <a href="chatbot.html" class="btn btn-primary"><b>Start learning</b></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtNtOkYC-MFjumVf6HA2mYpuhhAcE54NLKxg&s" class="card-img-top" alt="Certification">
+                <div class="card-body text-center">
+                    <h5 class="card-title"><b>Certification</b></h5>
+                    <p class="card-text">Earn valuable certificates to boost your career.</p>
+                    <a href="certification.html" class="btn btn-primary"><b>Start Learning</b></a>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <img src="https://as2.ftcdn.net/jpg/02/55/73/15/1000_F_255731595_eG8ZerN19GVsoXqnqaExufXIiWmfDcih.jpg" class="card-img-top" alt="Coding">
+                <div class="card-body text-center">
+                    <h5 class="card-title"><b>Coding</b></h5>
+                    <p class="card-text">Practice coding and enhance your programming skills..</p>
+                    <a href="courses.html" class="btn btn-primary"><b>Start learning</b></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>

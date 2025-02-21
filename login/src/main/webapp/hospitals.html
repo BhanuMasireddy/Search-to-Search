@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hospitals.</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-image: url('#');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .card-deck .card {
+            margin-bottom: 20px;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .btn-primary {
+            background-color: #d3a4b1;
+            color: black;
+            font-weight: bold;
+            border: none;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #c090a1;
+        }
+        @media (max-width: 767.98px) {
+            .card-deck {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="text-center mb-4">
+            <h1>Hospitals</h1>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <img src="https://www.apolloinformationcentre.com/wp-content/uploads/2019/07/int-hdr-apollo-hospital-1.jpg" class="card-img-top" alt="Gym">
+                <div class="card-body text-center">
+                    <h5 class="card-title"><b>Apollo Hospitals</b></h5>
+                    <p class="card-text">Locate top-rated hospitals in your area.</p>
+                    <a href="https://www.apollohospitals.com/" class="btn btn-primary"><b>Find Hospital</b></a>
+                </div>	
+            </div>
+            <div class="card">
+                <img src="https://ortil.com/storage/import/hospitals/yashoda-hospitals-18.webp" class="card-img-top" alt="Hospitals">
+                <div class="card-body text-center">
+                    <h5 class="card-title"><b>Yashoda Hospitals</b></h5>
+                    <p class="card-text">Locate top-rated hospitals in your area.</p>
+                    <a href="https://www.yashodahospitals.com/" class="btn btn-primary"><b>Find Hospital</b></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://media.telanganatoday.com/wp-content/uploads/2024/06/Conference-on-neuro-rehabilitation-held-at-KIMS-hospital-in-Hyderabad.png" class="card-img-top" alt="Pharmaceutical Stores">
+                <div class="card-body text-center">
+                    <h5 class="card-title"><b>KIMS Hyderabad</b></h5>
+                    <p class="card-text">Locate top-rated hospitals in your area.</p>
+                    <a href="https://www.kimshospitals.com/" class="btn btn-primary"><b>Find Hospital</b></a>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <img src="https://www.gandhihospital.telangana.gov.in/resource/images/gh2.jpg" class="card-img-top" alt="Nutritionists">
+                <div class="card-body text-center">
+                    <h5 class="card-title"><b>Gandhi Hospital</b></h5>
+                    <p class="card-text">Top government hospital.</p>
+                    <a href="https://www.gandhihospital.telangana.gov.in/index.htm" class="btn btn-primary"><b>Find Hospital</b></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.medicoverhospitals.in/images/hospitals/medicover-bangalore.webp" class="card-img-top" alt="Mental Health Services">
+                <div class="card-body text-center">
+                    <h5 class="card-title"><b> Medicover Hospital</b></h5>
+                    <p class="card-text">Locate top-rated hospitals in your area.</p>
+                    <a href="https://www.medicoverhospitals.in/" class="btn btn-primary"><b>Find Hospital</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

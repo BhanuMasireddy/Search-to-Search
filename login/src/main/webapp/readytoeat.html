@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Services</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+        body {
+            font-family: 'PT Sans', sans-serif;
+            background-image: url('food3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: #111110;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            margin: 0 0 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-button {
+            background-color: #34C759;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: #2E865F;
+        }
+
+        main {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .category {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card h3 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .card p {
+            margin: 0;
+            color: #666;
+        }
+
+        footer {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ready to eat</h1>
+    </header>
+    <main>
+        <div class="card-container">
+            <a href="https://www.swiggy.com/" target="_blank" class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png" alt="Swiggy">
+                <div class="card-content">
+                    <h3>Swiggy</h3>
+                    <p>Click to visit Swiggy</p>
+                </div>
+            </a>
+            <a href="https://www.zomato.com/" target="_blank" class="card">
+                <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2017-05/18/full/1495113103-2587.jpg" alt="Zomato">
+                <div class="card-content">
+                    <h3>Zomato</h3>
+                    <p>Click to visit Zomato</p>
+                </div>
+            </a>
+            <a href="https://www.eatsure.com/" target="_blank" class="card">
+                <img src="https://cdn6.aptoide.com/imgs/8/f/f/8ff0333aba22d46bdc6838b2b927e8b6_icon.png" alt="Eat Sure">
+                <div class="card-content">
+                    <h3>Eat Sure</h3>
+                    <p>Click to visit Eat Sure</p>
+                </div>
+            </a>
+            <a href="https://pizzaonline.dominos.co.in/" target="_blank" class="card">
+                <img src="https://findlogovector.com/wp-content/uploads/2018/12/dominos-logo-vector.png" alt="Dominos">
+                <div class="card-content">
+                    <h3>Dominos</h3>
+                    <p>Click to visit Dominos</p>
+                </div>
+            </a>
+            <a href="https://mcdelivery.co.in/" target="_blank" class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/McDonald%27s_logo.svg/2560px-McDonald%27s_logo.svg.png" alt="McDonald's">
+                <div class="card-content">
+                    <h3>McDonald's</h3>
+                    <p>Click to visit McDonald's</p>
+                </div>
+            </a>
+            <a href="https://online.kfc.co.in/" target="_blank" class="card">
+                <img src="https://foodbrandlogo.com/wp-content/uploads/2024/08/KFC-logo.webp" alt="KFC">
+                <div class="card-content">
+                    <h3>KFC</h3>
+                    <p>Click to visit KFC</p>
+                </div>
+            </a>
+            <a href="https://subway.in/" target="_blank" class="card">
+                <img src="https://www.designyourway.net/blog/wp-content/uploads/2023/07/Featured-1-8.jpg" alt="Subway">
+                <div class="card-content">
+                    <h3>Subway</h3>
+                    <p>Click to visit Subway</p>
+                </div>
+            </a>
+            <a href="https://www.pizzahut.co.in/" target="_blank" class="card">
+                <img src="https://i.pinimg.com/736x/cf/de/ab/cfdeabd2b571016773f3c68edfbb8262.jpg" alt="Pizza Hut">
+                <div class="card-content">
+                    <h3>Pizza Hut</h3>
+                    <p>Click to visit Pizza Hut</p>
+                </div>
+            </a>
+            <a href="https://www.tacobell.com/" target="_blank" class="card">
+                <img src="https://www.hatchwise.com/wp-content/uploads/2023/01/image-26.png" alt="Taco Bell">
+                <div class="card-content">
+                    <h3>Taco Bell</h3>
+                    <p>Click to visit Taco Bell</p>
+                </div>
+            </a>
+            <a href="https://www.burgerking.in/" target="_blank" class="card">
+                <img src="https://logos-world.net/wp-content/uploads/2020/05/Burger-King-Logo.png" alt="Burger King">
+                <div class="card-content">
+                    <h3>Burger King</h3>
+                    <p>Click to visit Burger King</p>
+                </div>
+            </a>
+        </div>
+    </section>
+</main>

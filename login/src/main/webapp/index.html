@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Project Home</title>
+    <style>
+         @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        :root {
+            --background-color: white;
+            --text-color: black;
+            --link-color: #008080; /* Teal color */
+            --link-hover-color: #005757; /* Darker shade of teal for hover */
+            --container-background: rgba(255, 255, 255, 0.9);
+            --container-hover-opacity: 0.9;
+        }
+
+        [data-theme="dark"] {
+            --background-color: #121212;
+            --text-color: #ffffff;
+            --link-color: #008080; /* Teal color */
+            --link-hover-color: #005757; /* Darker shade of teal for hover */
+            --container-background: rgba(18, 18, 18, 0.9);
+            --container-hover-opacity: 0.95;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://www.shutterstock.com/shutterstock/videos/1038667745/thumb/1.jpg?ip=x480') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        .container {
+            background: var(--container-background);
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+            animation: exampleAnimation 2s ease-in-out;
+        }
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            opacity: var(--container-hover-opacity);
+        }
+        h1 {
+            color: teal;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .link-button {
+            display: inline-block;
+            background: linear-gradient(to right, var(--link-color), rgb(97, 15, 155));
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-size: 16px;
+            margin: 10px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .link-button:hover {
+            background-color: var(--link-hover-color);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .link-button::after {
+            content: '';
+            background: rgba(255, 255, 255, 0.2);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            transition: left 0.3s ease;
+        }
+        .link-button:hover::after {
+            left: 0;
+        }
+        p {
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+        .illustration {
+            width: 100px;
+            margin: 20px auto;
+        }
+        .theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: var(--link-color);
+            color: var(--text-color);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .theme-toggle:hover {
+            background-color: var(--link-hover-color);
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark Mode</button>
+    <div class="container">
+        <h1>Welcome to SearchToSearch</h1>
+        <p>Select an option to proceed:</p>
+        <a href="register.jsp" class="link-button">Register</a>
+        <a href="login.jsp" class="link-button">Login</a>
+    </div>
+    <script>
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Services</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+        body {
+            font-family: 'PT Sans', sans-serif;
+            background-image: url('food3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: #111110;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            margin: 0 0 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-button {
+            background-color: #34C759;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: #2E865F;
+        }
+
+        main {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .category {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card h3 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .card p {
+            margin: 0;
+            color: #666;
+        }
+
+        footer {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Food</h1>
+        <nav>
+            <a href="home.html" class="nav-button">Home</a>
+            <a href="education.html" class="nav-button">Education</a>
+            <a href="automobiles.html" class="nav-button">AutoMobiles</a>
+            <a href="shopping.html" class="nav-button">Clothing</a>
+            <a href="health.html" class="nav-button">Health</a>
+            <a href="Travel.html" class="nav-button">Travel</a>
+            <a href="entertainment.html" class="nav-button">Entertainment</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card-container">
+            <a href="grocery.html" target="_blank" class="card">
+                <img src="https://static.vecteezy.com/system/resources/previews/012/697/676/non_2x/grocery-store-logo-template-in-flat-design-style-vector.jpg">
+                <div class="card-content">
+                    <h3>Groceries</h3>
+                    <p>Click to visit Groceries</p>
+                </div>
+            </a>
+            <a href="file:///C:/food/readyeat/eat.html " target="_blank" class="card">
+                <img src="https://thumbs.dreamstime.com/b/ready-to-eat-food-icon-ready-to-eat-healthy-food-icon-127810341.jpg" alt="ready to eat">
+                <div class="card-content">
+                    <h3>ready to eat</h3>
+                    <p>Click to visit raedy to eat</p>
+                </div>
+            </a>
+            <a href="file:///C:/food/freshmeat/meat.html" target="_blank" class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmrrs9NHhHrFFZNTQEoOr6QcvH0qjp2eewJ60wDVaq16o72GGkHDMjeTxv_2_1kZKSbbk&usqp=CAU" alt="Fresh meat">
+                <div class="card-content">
+                    <h3>Fresh meat</h3>
+                    <p>Click to visit Fresh meat</p>
+                </div>
+            </a>
+            
+            
+        </div>
+    </section>
+
+        </main>
+
+        <footer>
+            <h4>&copy; 2024 All Rights Reserved</h4>
+        </footer>
+    </body>
+    </html>

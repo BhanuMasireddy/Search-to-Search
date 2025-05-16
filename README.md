@@ -141,8 +141,9 @@ login/
 ## 👤 Author
 
 **Bhanu Masireddy**  
-Email: bhanureddym7@gmail.com 
-[GitHub Profile]([https://github.com/BhanuMasireddy](https://github.com/BhanuMasireddy))
+Email: bhanureddym7@gmail.com  
+[GitHub Profile](https://github.com/BhanuMasireddy)
+
 
 ---
 

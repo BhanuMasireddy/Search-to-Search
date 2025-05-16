@@ -7,7 +7,8 @@ Built during a hackathon, this project helps users search and get platform-based
 
 ## 🎥 Demo Video
 
-[▶️ Click here to watch the demo]([https://drive.google.com/your-demo-link](https://drive.google.com/drive/folders/1qf5tqTfsFoo325pgbyrgnAWUC5i1lsPu?usp=drive_link))
+[▶️ Click here to watch the demo](https://drive.google.com/drive/folders/1qf5tqTfsFoo325pgbyrgnAWUC5i1lsPu?usp=drive_link)
+
 
 ---
 

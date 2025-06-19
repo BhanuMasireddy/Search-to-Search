@@ -9,6 +9,9 @@ Built during a hackathon, this project helps users search and get platform-based
 
 [▶️ Click here to watch the demo](https://drive.google.com/drive/folders/1qf5tqTfsFoo325pgbyrgnAWUC5i1lsPu?usp=drive_link)
 
+## 🖼️ Website Screenshot
+
+![Website Screenshot](travel.jpg)
 
 ---
 
